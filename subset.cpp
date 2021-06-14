@@ -13,12 +13,14 @@ int printsubset(int ind,int n,int a[],vector<int>&ds)
 		cout<<"\n";
 		return 0;
 	}
+	//pic logic
 	if(ind<n)
 	{
 		ds.push_back(a[ind]);
 		printsubset(ind+1,n,a,ds);
 		ds.pop_back();
 	}
+	//non pic
 	printsubset(ind+1,n,a,ds);
 	
 }
