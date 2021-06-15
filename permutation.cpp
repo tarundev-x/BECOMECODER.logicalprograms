@@ -12,8 +12,10 @@ if(s.size()==ss.size())
 	}	
 	for(int i=0;i<n;i++)
 	{
+		//check it is already taken or not
 		if(vis[i]==0)
 		{
+			//if not make it as 1 and add it to ss
 			vis[i]=1;
 			printpermutation(ss+s[i],vis);
 			vis[i]=0;
